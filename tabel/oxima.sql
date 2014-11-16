@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 17, 2014 at 01:35 AM
+-- Generation Time: Nov 17, 2014 at 06:43 AM
 -- Server version: 5.5.35
 -- PHP Version: 5.4.4-14+deb7u10
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `menus` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `menu_id` int(11) NOT NULL,
+  `position` varchar(10) NOT NULL,
   `groups` varchar(10) NOT NULL DEFAULT '*',
   `label` varchar(70) NOT NULL,
   `controller` varchar(40) NOT NULL,
